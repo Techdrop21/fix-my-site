@@ -259,20 +259,45 @@ function Services() {
           <h2 className="mt-3 text-3xl font-semibold leading-tight tracking-tight md:text-4xl">
             Practical work that gets your business online — properly.
           </h2>
+          <div className="mt-4 h-1 w-12 bg-emerald-500" />
         </div>
-        <div className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-200 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((s) => (
-            <div key={s.title} className="bg-white p-7">
-              <s.icon className="h-6 w-6 text-neutral-900" strokeWidth={1.5} />
-              <h3 className="mt-5 text-lg font-semibold tracking-tight">{s.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-neutral-600">{s.desc}</p>
+
+        <div className="mt-14 grid grid-cols-1 border-t border-l border-neutral-200 md:grid-cols-3">
+          {services.map((s, i) => (
+            <div
+              key={s.title}
+              className="group relative border-r border-b border-neutral-200 p-8 transition-colors duration-300 hover:bg-[#fbfaf7]"
+            >
+              <div className="flex items-center justify-between">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-emerald-600">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <s.icon
+                  className="h-5 w-5 text-neutral-400 transition-colors group-hover:text-neutral-900"
+                  strokeWidth={1.5}
+                />
+              </div>
+              <h3 className="mt-6 text-xl font-semibold tracking-tight text-neutral-900">
+                {s.title}
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-neutral-600">{s.desc}</p>
+              <span className="mt-6 block h-px w-0 bg-emerald-500 transition-all duration-500 group-hover:w-12" />
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 flex items-center gap-4">
+          <div className="h-px flex-grow bg-neutral-200" />
+          <p className="text-xs uppercase tracking-widest text-neutral-400">
+            Expertise across the stack
+          </p>
+          <div className="h-px flex-grow bg-neutral-200" />
         </div>
       </div>
     </section>
   );
 }
+
 
 function Pricing() {
   return (
