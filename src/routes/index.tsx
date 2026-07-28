@@ -78,9 +78,11 @@ function Nav() {
   return (
     <header className="border-b border-neutral-200/70">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5">
-        <a href="#top" className="flex items-center gap-2 font-semibold tracking-tight">
-          <span className="inline-block h-2.5 w-2.5 rounded-full bg-emerald-500" />
-          <span>Web Dev — Nairobi</span>
+        <a href="#top" className="flex items-baseline gap-2 tracking-tight">
+          <span className="text-base font-semibold text-neutral-900">Software Engineer</span>
+          <span className="hidden text-xs uppercase tracking-[0.2em] text-neutral-400 sm:inline">
+            · Nairobi
+          </span>
         </a>
         <nav className="hidden gap-8 text-sm text-neutral-600 md:flex">
           <a href="#services" className="hover:text-neutral-900">Services</a>
