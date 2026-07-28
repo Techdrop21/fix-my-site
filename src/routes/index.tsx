@@ -572,7 +572,7 @@ function Footer() {
   return (
     <footer className="border-t border-neutral-200 bg-white">
       <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-4 px-5 py-8 text-sm text-neutral-500 md:flex-row md:items-center">
-        <p>© {new Date().getFullYear()} — Independent web developer, Nairobi.</p>
+        <p>© {new Date().getFullYear()} — Independent software engineer, Nairobi.</p>
         <a
           href={waLink()}
           target="_blank"
