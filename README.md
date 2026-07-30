@@ -157,22 +157,6 @@ The design uses Tailwind CSS v4 with a custom OKLCH color palette defined in `sr
 
 Dark mode tokens are defined in `.dark` but the site does not currently toggle dark mode.
 
----
-
-## Deployment
-
-The project is configured for **Cloudflare Workers** via Nitro (set in `@lovable.dev/vite-tanstack-config`). The build output is a Cloudflare-compatible edge function.
-
-```bash
-bun run build
-```
-
-The SSR server entry (`src/server.ts`) wraps TanStack Start's server handler and normalises catastrophic SSR errors into a friendly error page rather than leaking raw h3 JSON responses.
-
-This project is connected to [Lovable](https://lovable.dev). Commits pushed to the connected branch sync back to the Lovable editor automatically. Do not force-push, rebase, amend, or squash commits that are already pushed — doing so rewrites history on Lovable's side.
-
----
-
 ## Adding UI components
 
 This project uses [shadcn/ui](https://ui.shadcn.com). Components are already copied into `src/components/ui/` and are not installed from npm — edit them directly if needed.
