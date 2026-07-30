@@ -17,7 +17,7 @@ import {
 
 const WHATSAPP_NUMBER =
   (import.meta.env.VITE_WHATSAPP_NUMBER as string | undefined)?.replace(/[^\d]/g, "") ||
-  "254700000000";
+  "254717950959";
 
 const WHATSAPP_MESSAGE =
   "Hi, I found your website and I'd like help with a website/project. Here's what I need:";
