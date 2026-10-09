@@ -34,7 +34,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Fast business websites, website repairs, landing pages and technical fixes. Get your website live or fixed within days. Fixed pricing from KES 3,000.",
+          "Fast business websites, website repairs, landing pages and technical fixes. Get your website live or fixed within days. Fixed pricing from KES 17,500.",
       },
       { property: "og:title", content: "Need your business website fixed or live this week?" },
       {
@@ -220,33 +220,33 @@ function Services() {
   const services = [
     {
       icon: Globe,
-      title: "Business Websites",
-      desc: "Professional websites for businesses that need to establish a credible online presence.",
+      title: "Brand-Forward Web Presence",
+      desc: "A strategically designed website that positions your business as the credible, premium option in your market — built to convert visitors into paying clients.",
     },
     {
       icon: Rocket,
-      title: "Landing Pages",
-      desc: "Focused pages designed around one service, campaign, offer, or conversion goal.",
+      title: "High-Converting Landing Pages",
+      desc: "Precision-built pages engineered around a single offer or campaign goal. Every element — copy, layout, CTA — is structured to drive measurable action.",
     },
     {
       icon: Wrench,
-      title: "Website Repairs",
-      desc: "Broken pages, responsive issues, forms, links, layout problems, and other website failures.",
+      title: "Performance & Reliability Fixes",
+      desc: "Systematic diagnosis and resolution of broken functionality, slow load times, mobile failures, and anything else costing you credibility or clients.",
     },
     {
       icon: ServerCog,
-      title: "Deployment & Hosting",
-      desc: "Get your website properly deployed, configured, and live.",
+      title: "Infrastructure & Deployment",
+      desc: "Professional deployment, domain configuration, SSL, CDN, and hosting setup. Your site goes live correctly — secure, fast, and stable from day one.",
     },
     {
       icon: MessageSquare,
-      title: "Forms & Lead Capture",
-      desc: "Contact forms, consultation requests, enquiry forms, WhatsApp CTAs, and basic lead flows.",
+      title: "Lead Generation & CRM Integration",
+      desc: "Multi-channel lead capture — enquiry forms, WhatsApp flows, booking links — wired directly into your sales process so no prospect slips through.",
     },
     {
       icon: Code2,
-      title: "Technical Fixes",
-      desc: "Django, React, APIs, integrations, authentication, and other web-development problems.",
+      title: "Custom Development & Integrations",
+      desc: "Backend logic, API integrations, authentication, payment gateways, and bespoke features built on production-grade React and Django architectures.",
     },
   ];
   return (
@@ -254,10 +254,10 @@ function Services() {
       <div className="mx-auto max-w-6xl px-5 py-20 md:py-28">
         <div className="max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
-            What I can fix
+            What we deliver
           </p>
           <h2 className="mt-3 text-3xl font-semibold leading-tight tracking-tight md:text-4xl">
-            Practical work that gets your business online — properly.
+            Engineered for businesses that take their digital presence seriously.
           </h2>
           <div className="mt-4 h-1 w-12 bg-emerald-500" />
         </div>
@@ -306,63 +306,64 @@ function Pricing() {
         <div className="max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500">Pricing</p>
           <h2 className="mt-3 text-3xl font-semibold leading-tight tracking-tight md:text-4xl">
-            Fixed prices. No surprises.
+            Transparent investment. Defined scope. Delivered.
           </h2>
         </div>
         <p className="text-sm text-neutral-600">
-          All prices in Kenyan Shillings (KES). Final quote confirmed on WhatsApp.
+          All prices in Kenyan Shillings (KES). Scope confirmed before work begins.
         </p>
       </div>
 
       <div className="mt-12 grid gap-6 lg:grid-cols-3">
         <PriceCard
-          tag="Quick Fix"
-          price="KES 3,000–5,000"
-          desc="For an existing website or technical problem."
+          tag="Priority Fix"
+          price="KES 17,500"
+          desc="Rapid resolution of a specific technical problem on your existing site — diagnosed, fixed, and verified."
           features={[
-            "Broken pages",
-            "Mobile issues",
-            "Forms",
-            "Deployment",
-            "DNS / hosting problems",
-            "Small bugs & urgent fixes",
+            "Root-cause diagnosis",
+            "Broken pages & layout failures",
+            "Mobile & responsive issues",
+            "Form & contact failures",
+            "Deployment & DNS resolution",
+            "Post-fix functionality check",
           ]}
-          cta="Fix My Problem"
-          waExtra="I need a quick fix on my existing site."
+          cta="Fix My Site Now"
+          waExtra="I need a priority fix on my existing site. (KES 17,500)"
         />
         <PriceCard
           tag="Starter Site"
-          price="KES 7,500"
-          desc="A clean online presence, live in 48 hours."
+          price="KES 25,000"
+          desc="A polished, conversion-focused web presence that positions your brand and captures leads from day one."
           features={[
-            "One-page website",
-            "Mobile-first design",
-            "WhatsApp CTA",
-            "Contact form",
-            "Google Maps",
-            "Basic SEO",
-            "Deployment",
+            "Strategic single-page design",
+            "Mobile-first, performance-optimised",
+            "WhatsApp & enquiry lead capture",
+            "Google Maps & contact integration",
+            "On-page SEO foundation",
+            "Custom domain & SSL deployment",
+            "48-hour delivery",
           ]}
-          cta="Build My Site"
-          waExtra="I want the KES 7,500 Starter Site."
+          cta="Build My Presence"
+          waExtra="I want the KES 25,000 Starter Site."
           featured
           delivery="48-hour target delivery"
         />
         <PriceCard
-          tag="Business Site"
-          price="KES 15,000"
-          desc="A complete web presence for growing businesses."
+          tag="Business Suite"
+          price="KES 55,000"
+          desc="A comprehensive digital platform built to reflect your brand authority, drive qualified leads, and scale with your business."
           features={[
-            "4–6 pages",
-            "Mobile-first design",
-            "WhatsApp integration",
-            "Contact form",
-            "Google Maps",
-            "Basic SEO",
-            "Deployment",
+            "4–6 page custom architecture",
+            "Brand-aligned UI & copywriting guidance",
+            "Multi-channel lead generation system",
+            "WhatsApp, booking & CRM integration",
+            "Technical SEO & performance tuning",
+            "Secure infrastructure & CDN deployment",
+            "Analytics & conversion tracking setup",
+            "30-day post-launch support",
           ]}
-          cta="Start My Website"
-          waExtra="I want the KES 15,000 Business Site."
+          cta="Start My Project"
+          waExtra="I want the KES 55,000 Business Suite."
           delivery="3–5 day target delivery"
         />
       </div>
